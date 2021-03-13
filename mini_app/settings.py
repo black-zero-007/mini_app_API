@@ -24,9 +24,9 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'hu@up1g0r5$8dhrsl+zb$-x_yhbrwnlqmi7vm-4*c8l3^jg^ft'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ["*"]
 
 
 # Application definition
@@ -124,7 +124,7 @@ USE_TZ = True
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/3.1/howto/static-files/
-
+STATIC_ROOT = "/data/mini_static/"
 STATIC_URL = '/static/'
 CACHES = {
     "default": {
@@ -144,3 +144,7 @@ TENCENT_CITY = "ap-beijing"
 TENCENT_APP_ID = "1400465260"
 TENCENT_SIGN = "CodeChaser"
 
+try:
+    from .loacl_settings import *
+except ImportError:
+    pass
