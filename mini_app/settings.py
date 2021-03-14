@@ -145,6 +145,6 @@ TENCENT_APP_ID = "1400465260"
 TENCENT_SIGN = "CodeChaser"
 
 try:
-    from .loacl_settings import *
+    from .local_settings import *
 except ImportError:
     pass
