@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="bdd51929-8532-49e4-afc1-c6e0ed64add4" name="Default" comment="" />
+    <list default="true" id="bdd51929-8532-49e4-afc1-c6e0ed64add4" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/,gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/,gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -98,8 +102,8 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name=",gitignore" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/,gitignore">
+      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
           <provider selected="true" editor-type-id="text-editor">
             <state>
               <caret column="17" selection-start-column="17" selection-end-column="17" />
@@ -121,18 +125,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="252">
               <caret line="7" column="10" selection-start-line="7" selection-start-column="10" selection-end-line="7" selection-end-column="10" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="serializer.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/api/serializer.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="11772">
-              <caret line="334" column="8" selection-start-line="334" selection-start-column="8" selection-end-line="334" selection-end-column="8" />
-              <folding>
-                <element signature="e#13#22#0" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -196,6 +188,7 @@
         <option value="$PROJECT_DIR$/mini_app/loacl_settings.py" />
         <option value="$PROJECT_DIR$/,gitignore" />
         <option value="$PROJECT_DIR$/mini_app/settings.py" />
+        <option value="$PROJECT_DIR$/requirements.txt" />
       </list>
     </option>
   </component>
@@ -454,7 +447,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="das://79a33dc1-8e70-407c-bdf5-c4ee82841450/schema/main/table/api_userinfo" />
     <entry file="das://49fd0579-9a8b-4d0c-8236-7637052c4f73/schema/main/table/api_userinfo" />
     <entry file="das://49fd0579-9a8b-4d0c-8236-7637052c4f73/schema/main/table/django_migrations" />
     <entry file="das://2e620d6e-5f3d-4185-88eb-5c13ef5b5839/schema/Wx_App/table/django_content_type">
@@ -772,7 +764,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/,gitignore">
+    <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
         <state>
           <caret column="17" selection-start-column="17" selection-end-column="17" />
@@ -790,6 +782,9 @@
           </folding>
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/requirements.txt">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/mini_app/settings.py">
       <provider selected="true" editor-type-id="text-editor">
