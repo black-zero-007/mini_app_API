@@ -92,6 +92,42 @@ class NewsCollectRecord(models.Model):
     user = models.ForeignKey(verbose_name='用户',to=UserInfo,on_delete=models.CASCADE)
     news = models.ForeignKey(verbose_name='文章',to=News,on_delete=models.CASCADE)
 
+class ProductInfoRecord(models.Model):
+    product_name = models.CharField(verbose_name='商品名称',max_length=16)
+    product_info = models.CharField(verbose_name='商品详情',max_length=255)
+    wx_phone = models.CharField(verbose_name='联系方式',max_length=16)
+    address = models.CharField(verbose_name='位置', max_length=128)
+
+    price = models.PositiveIntegerField(verbose_name='价格')
+    collect_count = models.PositiveIntegerField(verbose_name='收藏数',default=0)
+    viewer_count = models.PositiveIntegerField(verbose_name='浏览数',default=0)
+
+    datatime = models.DateTimeField(verbose_name='发布时间',auto_now_add=True)
+
+    pro_user = models.ForeignKey(verbose_name='发布者',to='UserInfo',related_name='product',on_delete=models.CASCADE)
+
+class ProductCategoryRecord(models.Model):
+    product_category = {
+        (1,'生活用品'),
+        (2,'电子数码'),
+        (3,'复习资料'),
+        (4,'美容护肤'),
+        (5,'书籍'),
+        (6,'体育用具'),
+        (7,'其他')
+    }
+    category = models.CharField(verbose_name='分类',choices=product_category,max_length=16)
+    product = models.ForeignKey(verbose_name='商品',to='ProductInfoRecord',on_delete=models.CASCADE)
+
+class ProductCollectFavorRecord(models.Model):
+    product = models.ForeignKey(verbose_name='商品',to='ProductInfoRecord',on_delete=models.CASCADE)
+    user = models.ForeignKey(verbose_name='用户',to='UserInfo',on_delete=models.CASCADE)
+
+class ProductViewerFavorRecord(models.Model):
+    product = models.ForeignKey(verbose_name='商品',to='ProductInfoRecord',on_delete=models.CASCADE)
+    user = models.ForeignKey(verbose_name='用户', to='UserInfo', on_delete=models.CASCADE)
+
+
 
 
 
